@@ -1,9 +1,10 @@
 ### Ch 3:
+`App.jsx`
 * Error Handling <error boundary>
 * Centralize API call in function
 * Custom hook for API call
 * Loading Status
-* how to force delay:
+* How to force delay:
   ```javascript
    "scripts": {
     "start": "run-p start-app start-api",
@@ -13,5 +14,21 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  ```
+  
+  * How to use Async API call instead of promise
+  ```javascript
+  useEffect(
+    async function init(){
+      try{
+        const response = await getProducts("shoes");
+        setProducts(response);
+      } catch(e){
+        setError(e);
+      } finally{
+        setLoading(false);
+      }
+    }
+  );
   ```
   
