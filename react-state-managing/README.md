@@ -66,3 +66,11 @@
   }
   ```
 
+* To Alias a return value from custom hook
+  ```
+  const {data: product, loading, error} = useFetch("some URL");
+  ```
+  
+  ![inline](https://github.com/1688168/React/blob/main/react-state-managing/data/inline.png "inline")
+  ![custom hook](https://github.com/1688168/React/blob/main/react-state-managing/data/custom_hook.png "Custom Hook")
+  
