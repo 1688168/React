@@ -10,15 +10,15 @@ function App() {
     <BrowserRouter>
       <Header /> 
       <Routes>
-        <Route path="/" element={<div>Home</div>} />
-        <Route path="/services" element={<div>Services</div>} />
-        <Route path="/customsoftware" element={<div>Custom Software</div>} />
-        <Route path="/mobileapps" element={<div>Mobileapps</div>} />
-        <Route path="/websites" element={<div>Website</div>} />
-        <Route path="/revolution" element={<div>Revolution</div>} />
-        <Route path="/about" element={<div>About</div>} />
-        <Route path="/contact" element={<div>Contact</div>} />
-        <Route path="/estimate" element={<div>Estimate</div>} />
+        <Route exact path="/" element={<div>Home</div>} />
+        <Route exact path="/services" element={<div>Services</div>} />
+        <Route exact path="/customsoftware" element={<div>Custom Software</div>} />
+        <Route exact path="/mobileapps" element={<div>Mobileapps</div>} />
+        <Route exact path="/websites" element={<div>Website</div>} />
+        <Route exact path="/revolution" element={<div>Revolution</div>} />
+        <Route exact path="/about" element={<div>About</div>} />
+        <Route exact path="/contact" element={<div>Contact</div>} />
+        <Route exact path="/estimate" element={<div>Estimate</div>} />
       </Routes>
     </BrowserRouter>
 
